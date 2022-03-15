@@ -1,8 +1,12 @@
 import React, { FunctionComponent } from 'react'
-import Text from 'components/Text'
+import { Link } from 'gatsby'
 
 const IndexPage: FunctionComponent = function () {
-  return <Text text="Home" />
+  return (
+    <main>
+      <Link to="/infos/">To Infos</Link>
+    </main>
+  )
 }
 
 export default IndexPage
