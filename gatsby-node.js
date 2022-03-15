@@ -6,7 +6,7 @@
 
 // You can delete this file if you're not using it
 
-const path = require("path")
+const path = require('path')
 
 // Setup Import Alias
 exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
@@ -16,9 +16,9 @@ exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
     output,
     resolve: {
       alias: {
-        components: path.resolve(__dirname, "src/components"),
-        utils: path.resolve(__dirname, "src/utils"),
-        hooks: path.resolve(__dirname, "src/hooks"),
+        '@components': path.resolve(__dirname, 'src/components'),
+        '@utils': path.resolve(__dirname, 'src/utils'),
+        '@hooks': path.resolve(__dirname, 'src/hooks'),
       },
     },
   })
